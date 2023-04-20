@@ -9,8 +9,8 @@ import streamlit as st
 # Define the function
 def transform_data():
     # Read the data from the spreadsheet
-    df = pd.read_excel('C:/Users/rgrig/Desktop/Randy_Spreadsheets/Distribution_Grid/Distribution_Grids/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
-
+    #df = pd.read_excel('C:/Users/rgrig/Desktop/Randy_Spreadsheets/Distribution_Grid/Distribution_Grids/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
+    df = pd.read_excel('https://github.com/rgriggs0072/streamlit-example/blob/master/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
     # Get the store IDs from the first row
     store_ids = [x for x in df.columns[7:]]
 
