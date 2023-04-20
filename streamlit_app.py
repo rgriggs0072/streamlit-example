@@ -7,7 +7,7 @@ st.header('Welcome to Delta Pacifics Spreadsheet Formatter')
 def transform_data():
     # Read the data from the spreadsheet
     #df = pd.read_csv('C:/Users/rgrig/Desktop/Randy_Spreadsheets/Distribution_Grid/Distribution_Grids/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
-    df = pd.read_excel('https://github.com/rgriggs0072/streamlit-example/main/SAVEMART_DISTRIBUTION_GRID_RGSR.csv', engine='openpyxl')
+    df = pd.read_excel('https://github.com/rgriggs0072/streamlit-example/blob/master/SAVEMART_DISTRIBUTION_GRID_RGSR.csv', engine='openpyxl')
     #test
     
     # Get the store IDs from the first row
@@ -20,7 +20,7 @@ def transform_data():
     df_melted['Yes/No'] = df_melted['Yes/No'].apply(lambda x: 'Yes' if x == 1 else ('No' if pd.isna(x) else '*'))
 
     # Write the melted data to a CSV file
-    df_melted.to_csv('https://github.com/rgriggs0072/streamlit-example/main/SAVEMART_DISTRO_GRID_RGSR_1.csv', index=False, encoding='utf-8')
+    df_melted.to_csv('https://github.com/rgriggs0072/streamlit-example/blob/master/SAVEMART_DISTRO_GRID_RGSR_1.csv', index=False, encoding='utf-8')
 
     # Display the transformed data in Streamlit
     st.write(df_melted)
