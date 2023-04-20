@@ -7,7 +7,7 @@ st.header('Welcome to Delta Pacifics Spreadsheet Formatter')
 def transform_data():
     # Read the data from the spreadsheet
     #df = pd.read_csv('C:/Users/rgrig/Desktop/Randy_Spreadsheets/Distribution_Grid/Distribution_Grids/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
-    df = pd.read_excel('https://raw.githubusercontent.com/rgriggs0072/streamlit-example/master/SAVEMART_DISTRIBUTION_GRID_RGSR.csv', engine='openpyxl')
+    df = pd.read_csv('https://raw.githubusercontent.com/rgriggs0072/streamlit-example/master/SAVEMART_DISTRIBUTION_GRID_RGSR.csv', engine='openpyxl')
     #test
     
     # Get the store IDs from the first row
