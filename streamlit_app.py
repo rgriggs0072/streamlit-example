@@ -7,7 +7,8 @@ file = st.file_uploader("Choose an excel file", type="xlsx")
 def transform_data():
     # Read the data from the spreadsheet
     #df = pd.read_csv('C:/Users/rgrig/Desktop/Randy_Spreadsheets/Distribution_Grid/Distribution_Grids/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx')
-    df = pd.read_excel('https://github.com/rgriggs0072/streamlit-example/blob/master/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx', engine='openpyxl')
+   # df = pd.read_excel('https://github.com/rgriggs0072/streamlit-example/blob/master/SAVEMART_DISTRIBUTION_GRID_RGSR.xlsx', engine='openpyxl')
+df = pd.read_excel(file)
     #test
     
     # Get the store IDs from the first row
