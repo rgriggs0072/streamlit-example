@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import openpyxl
 
 st.header('Welcome to Delta Pacifics Spreadsheet Formatter')
 
