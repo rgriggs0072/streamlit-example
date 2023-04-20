@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 st.header('Welcome to Delta Pacifics Spreadsheet Formatter')
-
+file = st.file_uploader("Choose an excel file", type="xlsx")
 # Define the function
 def transform_data():
     # Read the data from the spreadsheet
